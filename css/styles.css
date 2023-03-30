@@ -1,0 +1,236 @@
+/* Author: Lorena de la Luz Mondini */
+:root {
+    --text-nav-color: #373736;
+    --header-bg-color: rgb(255, 255, 255);
+    --footer-bg-color: #d82148;
+    --nav-bg-color: #efefef;
+}
+
+header {
+    background-color: var(--nav-bg-color);
+
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* NAVIGATION */
+
+.main-nav {
+    font-size: 1rem;
+}
+
+@media (max-width: 991.98px) {
+    .main-nav {
+        font-size: 1rem;
+        flex-wrap: wrap;
+    }
+    .main-nav .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .main-nav {
+        font-size: 0.9rem;
+    }
+}
+
+.nav-container {
+    background-color: var(--nav-bg-color);
+}
+
+.nav .nav-link {
+    color: var(--text-nav-color);
+}
+
+@media (max-width: 1199.98px) {
+    .nav .nav-link {
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+}
+
+.nav .nav-link:hover {
+    color: #e20521;
+}
+
+.nav .nav-item:hover {
+    border-bottom: 4px solid #d82148;
+}
+
+.nav .nav-item {
+    border-bottom: 4px solid transparent;
+    border-right: 0.5px solid #ff1818;
+    transition: all 0.3s ease-out;
+}
+
+@media (max-width: 991.98px) {
+    .nav .nav-item {
+        border-right: none;
+    }
+}
+
+.nav .nav-item:last-child {
+    border-right: 0.5px solid transparent;
+}
+
+/* MAIN */
+
+main {
+    /* height: 100vh; */
+    /* background-color: rgb(255, 217, 217);
+     */
+}
+/* 
+PRINCIPAL PICTURE */
+
+.top-photo-pg {
+    background: url(../media/campus-fake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 530px;
+    position: relative;
+    overflow: hidden; /* se il componente child esce dalle dimensione del padre lo taglia */
+    margin-bottom: 15px;
+}
+
+.square-title1 {
+    height: 539px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    width: 20%;
+    background: #d82148;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.square-title2 {
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    width: 21%;
+    left: 10%;
+    height: 539px;
+    background: #d82148;
+    transform: skewX(-14deg);
+}
+
+.square-title3 {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 5%;
+    left: 30.5%;
+    height: 539px;
+    background: #d82148;
+    transform: skewX(-14deg);
+    opacity: 0.2;
+}
+
+.title-mainbox {
+    color: #fff;
+}
+
+/* CARD EFFECT */
+
+.card-zoom {
+    overflow: hidden;
+}
+
+.card-zoom .card-body {
+    z-index: 10;
+}
+
+.card-zoom .card-img-top {
+    z-index: 1;
+    transition: all 0.3s ease-out;
+    transform: scale(1);
+}
+
+.card-zoom:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* END CARD EFFECT */
+.first-card {
+    background-color: #fdf9f2;
+    /* #CCF2F4; */
+    color: #a4133f;
+}
+
+.second-card {
+    background-color: #fdf9f2;
+    color: #a4133f;
+}
+
+.card-img {
+    opacity: 0.9;
+}
+
+.card-img-overlay {
+    color: #cf2626f2;
+}
+
+.link-card {
+    text-decoration: none;
+}
+
+.link-card:hover {
+    color: rgba(163, 140, 139, 0.87);
+}
+
+/* ICONS */
+
+main .container {
+}
+
+.title-section {
+    color: #334756;
+}
+
+.container-icons {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.icons {
+    padding-top: 10px;
+}
+
+.icon-item {
+    margin-top: 6%;
+    margin-left: 6%;
+    margin-right: 6%;
+    color: #d82148;
+}
+
+/* NEWS  */
+
+.img-news1 {
+    background-image: url(../media/news1.PNG);
+    background-size: cover;
+}
+
+.img-news2 {
+    background-image: url(../media/news3.PNG);
+    background-size: cover;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--footer-bg-color);
+    /* border-top: 3px solid #a12626f2; */
+}
+
+/* social media */
+.social-item {
+}
+
+.copyright {
+    color: #efefef;
+}
